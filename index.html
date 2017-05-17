@@ -5,39 +5,53 @@
 	<title>Вакансия: Junior Frontend Developer</title>
 	<body>
 		<header><h1>Вакансия: Junior Frontend Developer</h1></header>
-		<p><img src="http://trinixy.ru/pics2/20071019/podb/2/cats_68.jpg" width="300" height="300"
+		<p><img src="http://trinixy.ru/pics2/20071019/podb/2/cats_68.jpg" width="80" height="80"
 		alt="Иллюстрация" align="left"
 		vspace="5" hspace="5">
-		<p><b>Имя</b>: Алексей</p>
-		<p><a href="https://github.com/Flex73">Ссылка на репозиторий в Git Hub</a></p>
-		<p><b>Опыт работы</b>: нет</p></p>
-		<p><b>Дата собеседования</b>: <input type="date" name="calendar">
-   		<input type="submit" value="Подтвердить"></p>
-   		<img vspace="75">
-   		<p><b>Уровень английского</b>:</p>
-   		<stap><input name="english" type="radio" value="bad"> Плохо <input name="english" type="radio" value="middle"> Средне <input name="english" type="radio" value="good"> Хорошо <input name="english" type="radio" value="perfect"> Отлично </stap>
-   		<p><b>Ключевые навыки</b>:</p>
-   		<li>HTML</li>
-   		<li>CSS/LESS</li>
-   		<li>Javascript</li>
-   		<form name="job" method="post" action="input1.php">
-  		<p><span><input type="text" size="40" placeholder="Введите навык..."><button>Добавить в список</button></span></p>
-  		<p><span><b>Коммуникабельность</b>: 
-  		<select size="1">
+
+    <div style="display: inline-block">
+        <div><b>Имя</b>: Алексей</div>
+        <div><a href="https://github.com/Flex73">Ссылка на репозиторий в Git Hub</a></div>
+        <div><b>Опыт работы</b>: нет</div>
+        <div><b>Дата собеседования</b>: <input type="date" name="calendar">
+        <input type="submit" value="Подтвердить"></div>
+    </div>
+
+    <p><div style="display: block">
+        <div><b>Уровень английского</b>:</div>
+        <div><input name="english" type="radio" value="bad"> Плохо <input name="english" type="radio" value="middle"> Средне <input name="english" type="radio" value="good"> Хорошо <input name="english" type="radio" value="perfect"> Отлично</div>
+    </div></p>
+   		
+      <div style="display: inline-block">
+        <b>Ключевые навыки</b>:
+        <ul>
+   		     <li>HTML</li>
+   		     <li>CSS/LESS</li>
+   		     <li>Javascript</li>
+        </ul>
+        <form name="job" method="post" action="input1.php">
+        <p><span><input type="text" size="40" placeholder="Введите навык..."><button>Добавить в список</button></span></p>
+      </div>
+
+  		<div><b>Коммуникабельность</b>: 
+  		<select size="1" value="level">
   			<option disabled>Выберите значение</option>
   			<option value>Новичок</option>
   			<option value>Средний</option>
   			<option value>Профессионал</option>
   			<option value>Мастер</option>
         <option value>Уровень Бог</option>
-			</select></span>
-			</p>
+			</select>
+			</div>
+
       <p><span><b>Желаемый уровень заработной платы</b>:<input type="text" size="40" placeholder="Введите значение..."></span></p>
+     
       <p><b>Подходит по критериям</b>:</p>
-      <span><input type="checkbox" name="checkbox" value="checkbox"> Английский язык
-            <input type="checkbox" name="checkbox" value="checkbox"> Оклад
-            <input type="checkbox" name="checkbox" value="checkbox"> Навыки
-            <input type="checkbox" name="checkbox" value="checkbox"> Сразу видно, что свой человек</span>
+      <span><input type="checkbox" name="language" value="speaking"> Английский язык
+            <input type="checkbox" name="salary" value="money"> Оклад
+            <input type="checkbox" name="skill" value="attitude"> Навыки
+            <input type="checkbox" name="man" value="brother"> Сразу видно, что свой человек</span>
+     
       <p><b>Образование, курсы и т.п.</b></p>
       <table border="1">
       <tr>
