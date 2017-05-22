@@ -3,6 +3,8 @@
     width: 800px;
     height: 600px;
     margin-left: 40px;
+    overflow: scroll;
+    overflow: auto;
 }
 
 .discussion-header {
@@ -10,15 +12,16 @@
 	height: 70px;
     border-bottom: 1px solid black;
     background-color: blue;
+    text-align: justify;
+    font-size: 20px;
 }
 
-.message-container {
+.message-entry {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: flex-start;
 	flex-wrap: nowrap;
 	background-color: purple;
-	padding-left: 20%;
 }
 
 .circle {
@@ -30,4 +33,13 @@
 	border-radius: 25px;
 	text-align: center;
 	font-size: 30px;
+}
+
+.message-container {
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	margin-left: 20px;
+	background-color: indigo;
 }
