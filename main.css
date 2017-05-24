@@ -37,7 +37,13 @@
 	font-size: 50px;
 	margin-left: 15px;
 	margin-right: 10px;
+	margin-top: 17px;
 	border: 1px solid black;
+}
+
+.date {
+	text-align: center;
+	padding-top: 20px;
 }
 
 .message-container {
@@ -48,4 +54,9 @@
 	margin-left: 20px;
 	background-color: indigo;
 	padding: 10px;
+}
+
+.closed {
+	text-align: right;
+	float:right;
 }
