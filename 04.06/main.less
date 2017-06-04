@@ -1,0 +1,366 @@
+@content-width: 1345px;
+@join-us-padding: 150px;
+@border-radius-big: 20px;
+@border-radius-small: 8px;
+@nav-button-size: 48px;
+
+@light-gray: #999999;
+@main-color1: #ff7d65;
+@text-color-bright: #EEE;
+
+.height-and-line-height(@value) {
+    height: @value;
+    line-height: @value;
+}
+
+.border-radius-common(@value) {
+    border-top-left-radius: @value;
+    border-bottom-right-radius: @value;
+}
+
+body {
+    margin: 0;
+}
+
+.temp-back {
+    width: 100%;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: @content-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+
+    .logo {
+        display: flex;
+        align-items: center; 
+
+        .logo-image {
+            background-image: url('img/logo.png');
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-size: contain;
+        }
+
+        .logo-text {
+            font-size: 30px;
+            margin-top: -8px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        .menu-item {
+            padding: 0 10px;
+        }
+    }
+}
+
+.join-us-container {
+    width: 100%;
+    height: 850px;
+    margin-top: -70px;
+    background: url(img/back1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .join-us-content {
+        width: calc(~"50% - "@join-us-padding);
+        padding-left: @join-us-padding;
+
+        .join-us-content-first-block {
+            background-color: @light-gray;
+            font-size: 52px;
+            text-align: center;
+            color: @main-color1;
+            opacity: 0.4;
+            .border-radius-common(@border-radius-big);
+            .height-and-line-height(82px);
+        }
+
+        .join-us-content-text {
+            font-size: 18px;
+            color: @text-color-bright;
+            padding: 8px 0;
+        }
+
+        .join-us-content-button {
+            background-color: @main-color1;
+            color: @text-color-bright;
+            .border-radius-common(@border-radius-small);
+            .height-and-line-height(34px);
+            text-align: center;
+            width: 138px;
+            font-size: 20px;
+        }
+
+        .join-us-content-nav {
+            .height-and-line-height(@nav-button-size);
+            text-align: center;
+            width: @nav-button-size;
+            position: absolute;
+            top: 50%;
+            background-color: @light-gray;
+            opacity: 0.3;
+            font-size: 22px;
+            margin-top: -@nav-button-size/2;
+        }
+
+        .join-us-content-nav-left {
+            left: 15px;;
+            border-top-right-radius: @border-radius-small;
+            border-bottom-left-radius: @border-radius-small;
+        }
+
+        .join-us-content-nav-right {
+            right: 15px;
+            .border-radius-common(@border-radius-small);
+        }
+    }
+}
+
+.latest-courses {
+    display: flex;
+    flex-direction: column;
+    width: @content-width;
+    margin-left: auto;
+    margin-right: auto;
+
+    .latest-courses-label {
+        margin: 52px 0 24px 0;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .latest-courses-container {
+        display: flex;
+        justify-content: center;
+        margin-top: -103px;
+
+        .latest-course-item {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 274px;
+            height: 328px;
+
+            .latest-course-item-image {
+                height: 220px;
+            }
+
+            .latest-course-item-title {
+                height: 5px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 18px;
+                align-items: center;
+            }
+
+            .latest-course-item-descr {
+                height: 118px;
+
+                .course-item-descr-first-block {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 18px;
+                    .height-and-line-height(50px);
+                }
+
+                .course-item-descr-second-block {
+                    height: 1px;
+                    width: 60px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: @text-color-bright;
+                }
+
+                .course-item-descr-third-block {
+                    color: @text-color-bright;
+                    text-align: center;
+                    padding: 12px 10px;
+                }
+            }
+        }
+    }    
+}
+
+.our-services {
+    border: 1px solid black;
+    height: 350px;
+    width: @content-width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    .our-services-right-part {
+        width: 50%;
+        height: 350px;
+        margin-left: 50%;
+    }
+
+    .our-services-right-part-button {
+        border-radius: 1px solid #00CED1;
+    }
+}
+
+.numbers {
+    height: 270px;
+    width: @content-width;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+    .numbers-content {
+        height: 270px;
+        width: 550px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .numbers-content-book {
+            height: 130px;
+            width: 100px;
+            border: 1px solid black;
+            font-size: 18px;
+            padding-top: 90px;
+            padding-left: 5px;
+        }
+
+        .numbers-content-users {
+            width: 130px;
+            padding-top: 90px;
+            padding-right: 20px;
+            border: 1px solid black; 
+    }
+        .numbers-content-pencil {
+            border: 1px solid black;
+            padding-top: 85px;
+            padding-right: 20px;
+            width: 80px;
+        }
+
+        .numbers-content-calendar {
+            border: 1px solid black;
+            padding-top: 80px;
+            padding-right: 3px;
+            width: 70px;
+        }
+    }
+}
+
+.how-we-work {
+    height: 728px;
+    width: @content-width;
+}
+
+.welcome-to-unilearn {
+    height: 205px;
+    width: @content-width;
+    .welcome-to-unilearn-content {
+        text-align: center;
+        margin-left: 6px;
+        margin-top: 117px;
+        font-size: 27px;
+        .welcome-to-unilearn-content-button {
+            width: 100px;
+            border: 1px solid black;
+            margin-top: 23px;
+            font-size: 15px;
+            margin-left: 620px;
+        }
+    }
+}
+
+.we-offer {
+    height: 322px;
+    width: @content-width;
+
+    .we-offer-item {
+        width: 50%;
+    }
+
+    .we-offer-container {
+        width: 50%;
+        margin-left: 51%;
+        margin-top: 50px;
+        font-size: 27px;
+    }
+
+    .we-offer-container-options {
+        margin-right: 33%;
+        margin-top: 170px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.about-us {
+    height: 465px;
+    width: @content-width;
+}
+
+.get-in-touch {
+    height: 210px;
+    width: @content-width;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+
+    .get-in-touch-content-subscription {
+        display: flex;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.our-teachers {
+    height: 435px;
+    width: @content-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.more-about {
+    height: 392px;
+    width: @content-width;
+}
+
+.twitter {
+    height: 269px;
+    width: @content-width;
+}
+
+.community-life {
+    height: 500px;
+    width: @content-width;
+}
+
+.testimonials {
+    height: 242px;
+    width: @content-width;
+}
+
+.map {
+    height: 281px;
+    width: @content-width;
+}
+
+.footer {
+    height: 352px;
+    width: @content-width;
+}
