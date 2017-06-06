@@ -162,17 +162,42 @@ body {
   height: 350px;
   width: 1345px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: baseline;
+}
+.our-services .our-services-left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin-left: 260px;
+  margin-top: 30px;
+  width: 365px;
+  height: 240px;
+}
+.our-services .our-services-left-part .our-services-left-part-first-block {
+  width: 365px;
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+.our-services .our-services-left-part .our-services-left-part-second-block {
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 .our-services .our-services-right-part {
-  width: 50%;
-  height: 350px;
-  margin-left: 50%;
+  margin-top: 102px;
+  font-size: 26px;
+  padding-left: 55px;
 }
 .our-services .our-services-right-part-button {
   border-radius: 1px solid #00CED1;
+  padding-top: 140px;
+  padding-left: 310px;
+  font-size: 14px;
 }
 .numbers {
   height: 270px;
@@ -185,35 +210,22 @@ body {
   height: 270px;
   width: 550px;
   border: 1px solid black;
+}
+.numbers .numbers-content .numbers-content-items {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-}
-.numbers .numbers-content .numbers-content-book {
-  height: 130px;
-  width: 100px;
-  border: 1px solid black;
-  font-size: 18px;
-  padding-top: 90px;
-  padding-left: 5px;
-}
-.numbers .numbers-content .numbers-content-users {
-  width: 130px;
-  padding-top: 90px;
-  padding-right: 20px;
-  border: 1px solid black;
-}
-.numbers .numbers-content .numbers-content-pencil {
-  border: 1px solid black;
   padding-top: 85px;
-  padding-right: 20px;
-  width: 80px;
 }
-.numbers .numbers-content .numbers-content-calendar {
-  border: 1px solid black;
-  padding-top: 80px;
-  padding-right: 3px;
-  width: 70px;
+.numbers .numbers-content .numbers-content-amount {
+  text-align: justify;
+  padding-top: 5px;
+  font-size: 30px;
+  font-family: "Monotype Corsiva" Cursive;
+}
+.numbers .numbers-content .numbers-content-descr {
+  font-size: 10px;
+  padding-top: 2px;
+  text-align: justify;
 }
 .how-we-work {
   height: 728px;
@@ -258,6 +270,25 @@ body {
 .about-us {
   height: 465px;
   width: 1345px;
+  font-size: 25px;
+}
+.about-us .about-us-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.about-us .about-us-container .about-us-container-nav {
+  width: 50%;
+}
+.about-us .about-us-item .about-us-item-nav-left {
+  left: 15px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.about-us .about-us-item .about-us-item-nav-right {
+  right: 15px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .get-in-touch {
   height: 210px;
@@ -281,6 +312,23 @@ body {
 .more-about {
   height: 392px;
   width: 1345px;
+  display: flex;
+  justify-content: space-between;
+}
+.more-about .more-about-content-right-side {
+  margin-right: 19%;
+  width: 385px;
+  margin-top: 104px;
+  font-size: 25px;
+}
+.more-about .more-about-content-right-side .more-about-content-right-side-button {
+  height: 26px;
+  width: 100px;
+  font-size: 12px;
+  margin-top: 175px;
+  margin-left: 278px;
+  border: 1px solid black;
+  text-align: center;
 }
 .twitter {
   height: 269px;
@@ -289,6 +337,48 @@ body {
 .community-life {
   height: 500px;
   width: 1345px;
+  text-align: center;
+}
+.community-life .community-life-title {
+  font-size: 25px;
+  padding-top: 45px;
+  height: 40px;
+  margin-left: 5px;
+}
+.community-life .community-life-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 24px;
+  font-size: 18px;
+}
+.community-life .community-life-content .community-life-first-block {
+  height: 295px;
+  width: 250px;
+  border: 1px solid black;
+  margin-right: 30px;
+  padding-left: 40px;
+}
+.community-life .community-life-content .community-life-first-block .community-life-first-block-item {
+  padding-top: 47px;
+}
+.community-life .community-life-content .community-life-second-block {
+  height: 295px;
+  width: 250px;
+  border: 1px solid black;
+  margin-right: 30px;
+}
+.community-life .community-life-content .community-life-second-block .community-life-second-block-item {
+  padding-top: 47px;
+}
+.community-life .community-life-content .community-life-third-block {
+  height: 295px;
+  width: 250px;
+  border: 1px solid black;
+  margin-right: 45px;
+}
+.community-life .community-life-content .community-life-third-block .community-life-third-block-item {
+  padding-top: 47px;
 }
 .testimonials {
   height: 242px;
