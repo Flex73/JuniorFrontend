@@ -5,6 +5,9 @@
 @nav-button-size: 48px;
 @community-life-content-height: 295px;
 @community-life-content-width: 250px;
+@our-teachers-content-block-height: 165px;
+@our-teachers-content-block-width: 450px;
+@our-teachers-content-block-descr-title: 15px;
 
 
 @light-gray: #999999;
@@ -397,9 +400,109 @@ body {
 }
 
 .our-teachers {
-	height: 435px;
+	height: 386px;
 	width: @content-width;
-	display: flex;
+	text-align: center;
+	margin-top: 46px;
+	font-size: 26px;
+
+	.our-teachers-content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		height: 350px;
+		margin-top: 10px;
+		font-size: 12px;
+		padding: 12px;
+
+		.our-teachers-content-first-block {
+			width: @our-teachers-content-block-width;
+			height: @our-teachers-content-block-height;
+
+			.our-teachers-content-first-block-descr {
+				height: 165px;
+				width: 350px;
+				margin-left: 130px;
+				padding-top: 11px;
+				font-size: 11px;
+
+				.our-teachers-content-first-block-descr-icons {
+					margin-top: 90px;
+					font-size: 15px;
+				}
+			}
+
+			.our-teachers-content-first-block-descr-title {
+				font-size: @our-teachers-content-block-descr-title;
+			}
+		}
+
+		.our-teachers-content-second-block {
+			width: @our-teachers-content-block-width;
+			height: @our-teachers-content-block-height;
+
+			.our-teachers-content-second-block-descr {
+				height: 165px;
+				width: 350px;
+				margin-left: 120px;
+				padding-top: 11px;
+				font-size: 11px;
+
+				.our-teachers-content-second-block-descr-icons {
+					margin-top: 90px;
+					font-size: 15px;
+				}
+			}
+
+			.our-teachers-content-second-block-descr-title {
+				font-size: @our-teachers-content-block-descr-title;
+			}
+		}
+
+		.our-teachers-content-third-block {
+			width: @our-teachers-content-block-width;
+			height: @our-teachers-content-block-height;
+
+			.our-teachers-content-third-block-descr {
+				height: 165px;
+				width: 350px;
+				margin-left: 130px;
+				padding-top: 16px;
+				font-size: 11px;
+
+				.our-teachers-content-third-block-descr-icons {
+					margin-top: 90px;
+					font-size: 15px;
+				}
+			}
+
+			.our-teachers-content-third-block-descr-title {
+				font-size: @our-teachers-content-block-descr-title;
+			}
+		}
+
+		.our-teachers-content-fourth-block {
+			width: @our-teachers-content-block-width;
+			height: @our-teachers-content-block-height;
+
+			.our-teachers-content-fourth-block-descr {
+				height: 165px;
+				width: 350px;
+				margin-left: 120px;
+				padding-top: 16px;
+				font-size: 11px;
+
+				.our-teachers-content-fourth-block-descr-icons {
+					margin-top: 90px;
+					font-size: 15px;
+				}
+
+			.our-teachers-content-fourth-block-descr-title {
+				font-size: @our-teachers-content-block-descr-title;
+			}
+			}
+		}
+	}
 }
 
 .more-about {
@@ -417,8 +520,8 @@ body {
 		.more-about-content-right-side-button {
 			height: 26px;
 			width: 100px;
-			font-size: 12px;
-			margin-top: 175px;
+			font-size: 13px;
+			margin-top: 178px;
 			margin-left: 278px;
 			border: 1px solid black;
 			text-align: center;
@@ -500,7 +603,40 @@ body {
 }
 
 .footer {
-	height: 330px;
+	height: 310px;
 	width: @content-width;
 	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+
+	.footer-first-block {
+		width: 21%;
+	}
+
+	.footer-second-block {
+		width: 20%;
+	}
+
+	.footer-third-block {
+		width: 21%;
+	}
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 12px;
+
+	.footer-bottom-descr {
+		width: 35%;
+		text-align: center;
+		font-size: 11px;
+		padding-left: 30px;
+	}
+
+	.footer-bottom-nav {
+		width: 35%;
+		font-size: 13px;
+		margin-left: 50px;
+	}
 }
