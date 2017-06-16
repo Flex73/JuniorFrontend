@@ -1,0 +1,85 @@
+@content-width: 1230px;
+
+body {
+	margin: 0;
+}
+
+.temp-back {
+	width: 100%;
+	opacity: 0.4;
+	position: absolute;
+}
+
+.up-of-page {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 120px;
+	width: @content-width;
+	height: 522px;
+
+	.logo-image {
+	background-image: url('img/minto.jpg');
+	width: 260px;
+	height: 260px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-size: contain;
+	margin-top: 130px;
+	}
+
+	.title-up-of-page {
+		padding-top: 176px;
+		font-size: 24px;
+		width: 700px;
+		margin-left: 30px;
+		padding-left: 40px;
+	}
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: @content-width;
+	height: 145px;
+
+	.nav-content {
+		display: flex;
+		flex-direction: center;
+		width: 220px;
+		margin-left: 143px;
+
+		.nav-image {
+			background-image: url('img/minto.jpg');
+			width: 80px;
+			height: 80px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			background-size: contain;
+			margin-top: 40px;
+	}
+
+		.nav-title {
+			font-size: 37px;
+			padding-top: 58px;
+			padding-left: 13px;
+		}
+	}
+
+
+
+
+	.menu {
+		display: flex;
+		justify-content: space-between;
+		width: 650px;
+		font-size: 18px;
+
+		.menu-item {
+			width: 155px;
+			padding-top: 70px;
+			font-size: 20px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
