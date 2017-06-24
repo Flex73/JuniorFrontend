@@ -1,13 +1,14 @@
-function isEven (a) {
-    if (a == 0)
+function isEven(a) {
+  if (a == 0)
     return true;
-    else if (a == 1)
+  else if (a == 1)
     return false;
-    else if (a < 0)
+  else if (a < 0)
     return isEven(-a);
-    else 
-    return isEven(n - 2);
+  else
+    return isEven(a - 2);
 }
+
 
 console.log(isEven(50));
 console.log(isEven(75));
