@@ -9,9 +9,10 @@ body {
 .up-of-page {
   display: flex;
   justify-content: space-around;
-  margin-left: 120px;
+  margin-left: 100px;
   width: 1230px;
-  height: 522px;
+  height: 530px;
+  border-bottom: 5px solid purple;
 }
 .up-of-page .logo-image {
   background-image: url('img/minto.jpg');
@@ -21,19 +22,22 @@ body {
   display: inline-block;
   background-size: contain;
   margin-top: 130px;
+  margin-left: 30px;
 }
 .up-of-page .title-up-of-page {
-  padding-top: 176px;
-  font-size: 24px;
-  width: 700px;
-  margin-left: 30px;
-  padding-left: 40px;
+  width: 765px;
+  height: 330px;
+  padding-top: 195px;
+  padding-left: 82px;
+  font-size: 51px;
+  letter-spacing: 2px;
+  line-height: 130%;
 }
 .nav {
   display: flex;
   justify-content: space-between;
   width: 1230px;
-  height: 145px;
+  height: 135px;
 }
 .nav .nav-content {
   display: flex;
@@ -48,23 +52,96 @@ body {
   background-repeat: no-repeat;
   display: inline-block;
   background-size: contain;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .nav .nav-content .nav-title {
   font-size: 37px;
-  padding-top: 58px;
+  padding-top: 42px;
   padding-left: 13px;
 }
 .nav .menu {
   display: flex;
   justify-content: space-between;
-  width: 650px;
+  width: 670px;
   font-size: 18px;
+  margin-left: 100px;
+  padding-left: 12px;
 }
 .nav .menu .menu-item {
-  width: 155px;
-  padding-top: 70px;
+  width: 145px;
+  padding-top: 50px;
   font-size: 20px;
   display: flex;
+  letter-spacing: 1px;
+}
+.carousel {
+  height: 537px;
+  width: 1063px;
+  margin-left: 74px;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  height: 510px;
+}
+.content-first-block {
+  height: 155px;
+  width: 1230px;
+  font-size: 20px;
+  font-style: italic;
+  color: purple;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 70px;
+  border-top: 1px solid purple;
+  border-bottom: 1px solid purple;
+}
+.content-second-block {
+  height: 360px;
+  width: 1230px;
+  display: flex;
   justify-content: center;
+  margin-left: 90px;
+}
+.content-second-block .content-second-block-item {
+  width: 300px;
+  background-image: url('img/violet.jpg');
+}
+.content-second-block .content-second-block-descr {
+  width: 700px;
+  margin-top: 71px;
+  margin-left: 45px;
+}
+.content-second-block .content-second-block-descr .content-second-block-descr-title {
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0.45px;
+}
+.content-second-block .content-second-block-descr .content-second-block-descr-content {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.content-second-block .content-second-block-descr .content-second-block-descr-content .content-second-block-descr-content-button {
+  float: right;
+  margin-top: 43px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+.some-facts-about-us {
+  height: 236px;
+}
+.some-facts-about-us .some-facts-about-us-title {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+.some-facts-about-us .some-facts-about-us-descr {
+  margin-left: 147px;
+  font-size: 23px;
+  letter-spacing: 0.6px;
+  word-spacing: 1.4px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
