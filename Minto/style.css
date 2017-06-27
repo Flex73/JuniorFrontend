@@ -104,7 +104,8 @@ body {
 }
 .content-second-block .content-second-block-item {
   width: 300px;
-  background-image: url('img/violet.jpg');
+  height: 360px;
+  background-color: purple;
 }
 .content-second-block .content-second-block-descr {
   width: 700px;
@@ -128,20 +129,33 @@ body {
   font-style: italic;
 }
 .some-facts-about-us {
-  height: 236px;
+  height: 265px;
+  margin-left: 147px;
+  width: 1100px;
 }
 .some-facts-about-us .some-facts-about-us-title {
   text-align: center;
-  font-size: 19px;
+  font-size: 27px;
   font-weight: bold;
 }
 .some-facts-about-us .some-facts-about-us-descr {
-  margin-left: 147px;
+  margin-top: 5px;
   font-size: 23px;
   letter-spacing: 0.6px;
   word-spacing: 1.4px;
 }
 .footer {
+  height: 55px;
+  margin-top: 12px;
+  margin-left: 147px;
+  margin-right: 136px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  border-bottom: 5px solid purple;
+}
+.footer .footer-icons {
+  width: 85px;
   display: flex;
   justify-content: space-between;
 }
