@@ -67,6 +67,9 @@ body {
   margin-left: 100px;
   padding-left: 12px;
 }
+.nav .menu .ui-menu {
+  width: 150px;
+}
 .nav .menu .menu-item {
   width: 145px;
   padding-top: 50px;
